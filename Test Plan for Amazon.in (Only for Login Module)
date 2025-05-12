@@ -1,0 +1,160 @@
+# Test Plan – Amazon.in Login Module
+
+## Document Control
+
+- **Project Name**: Amazon.in – Login Module
+- **Prepared By**: [Your Name], QA Lead
+- **Date**: [Insert Date]
+- **Version**: 1.0
+- **Reviewed By**: [Reviewer Name]
+- **Approved By**: [Approver Name]
+
+---
+
+## 1. Introduction
+
+The purpose of this test plan is to define the strategy and scope for testing the Login functionality of the Amazon.in website. The login module is critical for ensuring secure user access to accounts and personalized services. This document outlines the objectives, approach, resources, schedule, and deliverables for this effort.
+
+---
+
+## 2. Objectives and Tasks
+
+### 2.1 Objectives
+- Verify that registered users can log in successfully using valid credentials.
+- Validate proper handling of invalid login attempts.
+- Ensure login workflows are secure, performant, and user-friendly.
+- Verify integration with account recovery (forgot password) and OTP verification.
+- Ensure cross-browser and device compatibility.
+
+### 2.2 Tasks
+- Review requirements and designs
+- Design test scenarios and test cases
+- Set up test environment
+- Execute test cases and log defects
+- Re-test and regression testing
+- Provide test sign-off
+
+---
+
+## 3. Scope
+
+### 3.1 In Scope
+- Login using email/phone and password
+- OTP-based login
+- Forgot password workflow
+- Login attempt rate-limiting and security
+- UI/UX validation for login forms
+- Browser compatibility (Chrome, Firefox, Safari, Edge)
+- Device compatibility (Desktop, Mobile, Tablet)
+
+### 3.2 Out of Scope
+- New user registration
+- Post-login features (cart, wishlist, etc.)
+- Third-party integrations (Google/Facebook login – if not available)
+
+---
+
+## 4. Test Strategy
+
+### 4.1 Types of Testing
+- **Functional Testing**
+- **UI/UX Testing**
+- **Boundary Testing**
+- **Security Testing** (manual, limited scope)
+- **Compatibility Testing**
+- **Regression Testing**
+- **Smoke and Sanity Testing**
+
+### 4.2 Test Design Techniques
+- Equivalence Partitioning
+- Boundary Value Analysis
+- State Transition Testing
+- Error Guessing
+
+---
+
+## 5. Entry and Exit Criteria
+
+### Entry Criteria
+- Functional requirements are reviewed and approved
+- Test environment is set up and stable
+- Test cases are reviewed and baseline is signed off
+
+### Exit Criteria
+- All planned test cases executed
+- All critical/high severity defects closed
+- Test summary report submitted
+- Sign-off from QA and stakeholders
+
+---
+
+## 6. Test Deliverables
+
+- Test Plan
+- Test Scenarios and Test Cases
+- Test Data
+- Daily Status Reports
+- Defect Reports (in Jira/Bugzilla)
+- Final Test Summary Report
+- Test Closure Document
+
+---
+
+## 7. Environment Requirements
+
+- **Staging Environment** with production-like configuration
+- **Browsers**: Latest Chrome, Firefox, Edge, Safari
+- **Devices**: Android (10+), iOS (13+), Windows/Mac desktops
+- **Tools**:
+  - Test Management: TestRail / Excel
+  - Defect Tracking: Jira
+  - Screen Recording: Loom / Lightshot
+
+---
+
+## 8. Roles and Responsibilities
+
+| Role             | Name           | Responsibility                      |
+|------------------|----------------|--------------------------------------|
+| QA Lead          | [Your Name]    | Planning, Review, Reporting          |
+| QA Engineers     | [Team Names]   | Test case design and execution       |
+| Dev Lead         | [Dev Name]     | Support on defect resolution         |
+| Product Manager  | [PM Name]      | Requirement clarification            |
+
+---
+
+## 9. Schedule
+
+| Phase                  | Start Date   | End Date     |
+|------------------------|--------------|--------------|
+| Test Planning          | DD-MM-YYYY   | DD-MM-YYYY   |
+| Test Case Design       | DD-MM-YYYY   | DD-MM-YYYY   |
+| Test Execution         | DD-MM-YYYY   | DD-MM-YYYY   |
+| Defect Retesting       | DD-MM-YYYY   | DD-MM-YYYY   |
+| Test Closure & Report  | DD-MM-YYYY   | DD-MM-YYYY   |
+
+---
+
+## 10. Risk and Mitigation
+
+| Risk                                        | Mitigation Strategy                        |
+|---------------------------------------------|--------------------------------------------|
+| Last-minute changes in login flow           | Freeze requirements before test execution  |
+| Test environment instability                | Use dedicated QA environment               |
+| Third-party OTP gateway issues              | Use mock data if service is unavailable    |
+| Limited mobile device availability          | Use BrowserStack or similar tools          |
+
+---
+
+## 11. Approval
+
+| Role             | Name           | Signature | Date       |
+|------------------|----------------|-----------|------------|
+| QA Lead          | [Your Name]    |           | DD-MM-YYYY |
+| Dev Lead         | [Dev Name]     |           | DD-MM-YYYY |
+| Product Manager  | [PM Name]      |           | DD-MM-YYYY |
+
+---
+
+> **Note:** This test plan will be reviewed and updated as needed based on changes in scope or requirements.
+
